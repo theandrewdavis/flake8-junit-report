@@ -45,5 +45,10 @@ setuptools.setup(
     ],
     include_package_data=True,
     scripts=['bin/flake8_junit']
+    entry_points={
+        'console_scripts': [
+            'flake8_junit = bin/flake8_junit:main',
+        ],
+    },
 
 )
